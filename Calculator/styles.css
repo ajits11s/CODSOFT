@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    font-size: 2em;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    background: rgba(255, 255, 255, 0.011);
+    color: black;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.6);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.6);
+    transition: 0.2s ease-in-out;
+}
+
+.operator {
+    color: #007bff;
+}
+
+.equal {
+    background: #ff9500;
+    color: white;
+}
+
+button:active {
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -2px -2px 4px rgba(255, 255, 255, 0.6);
+    transform: scale(0.95);
+}
